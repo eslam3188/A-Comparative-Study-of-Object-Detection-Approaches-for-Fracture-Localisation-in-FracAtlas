@@ -2,7 +2,8 @@ model_paths = ['GAM_best.pt',
                'SA_best.pt',
                'resblock_best.pt',
                'ECA_best.pt',
-               'yolov9_last.pt'
+               'yolov9_best.pt',
+               'yolov10_best.pt'
               ]
 models = [YOLO(f'models/{model_path}') for model_path in model_paths]
 
