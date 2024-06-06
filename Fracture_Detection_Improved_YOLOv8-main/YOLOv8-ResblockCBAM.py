@@ -10,4 +10,6 @@ project = rf.workspace("gp-f9rwi").project("fractured-6vb1c")
 version = project.version(19)
 dataset = version.download("yolov8-obb")
 
+!pip install -r requirements.txt
+
 !python start_train.py --model ./ultralytics/cfg/models/v8/yolov8m-ResblockCBAM.yaml --data_dir ./Fractured-19/data.yaml

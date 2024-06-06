@@ -10,5 +10,7 @@ project = rf.workspace("gp-f9rwi").project("fractured-6vb1c")
 version = project.version(19)
 dataset = version.download("yolov8-obb")
 
+!pip install -r requirements.txt
+
 from ultralytics import YOLO
 !yolo task=detect mode=train model=yolov9c.pt data={dataset.location}/data.yaml epochs=100 imgsz=640
